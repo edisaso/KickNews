@@ -6,7 +6,7 @@ const siteMetadata = {
   //description: 'Website created to cover Kick.com news',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://kick-news.vercel.app/',
+  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/edisaso/KickNews',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
