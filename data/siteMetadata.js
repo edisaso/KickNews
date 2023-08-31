@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://kick-news.vercel.app/',
   siteRepo: 'https://github.com/edisaso/KickNews',
   siteLogo: '/static/images/logo.png',
-  socialBanner: 'https://raw.githubusercontent.com/edisaso/KickNews/main/public/static/images/twitter-card.png',
+  socialBanner: '/static/images/twitter-card.png',
   //mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'edisasobeast@gmail.com',
   github: 'https://github.com/edisaso',
