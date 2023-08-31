@@ -35,19 +35,19 @@ const generateRss = (config, posts, page = 'feed.xml') => `
 `
 
 async function generateRSS(config, allNews, page = 'feed.xml') {
-  const publishPosts = allNews.filter((post) => post.draft !== true)
+  const publishNews = allNews.filter((post) => post.draft !== true)
   // RSS for News post
-  if (publishPosts.length > 0) {
-    const rss = generateRss(config, publishPosts)
+  if (publishNews.length > 0) {
+    const rss = generateRss(config, publishNews)
     writeFileSync(`./public/${page}`, rss)
   }
 
-  if (publishPosts.length > 0) {
+  if (publishNews.length > 0) {
     for (const tag of Object.keys(tagData)) {
-      const filteredPosts = allNews.filter((post) =>
+      const filteredNews = allNews.filter((post) =>
         post.tags.map((t) => GithubSlugger.slug(t)).includes(tag)
       )
-      const rss = generateRss(config, filteredPosts, `tags/${tag}/${page}`)
+      const rss = generateRss(config, filteredNews, `tags/${tag}/${page}`)
       const rssPath = path.join('public', 'tags', tag)
       mkdirSync(rssPath, { recursive: true })
       writeFileSync(path.join(rssPath, page), rss)
