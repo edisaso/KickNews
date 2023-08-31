@@ -6,10 +6,10 @@ const siteMetadata = {
   //description: 'Website created to cover Kick.com news',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://kick-news.vercel.app/',
   siteRepo: 'https://github.com/edisaso/KickNews',
   siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: 'https://raw.githubusercontent.com/edisaso/KickNews/main/public/static/images/twitter-card.png',
   //mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'edisasobeast@gmail.com',
   github: 'https://github.com/edisaso',
