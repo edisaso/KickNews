@@ -23,7 +23,6 @@ const generateRss = (config, posts, page = 'feed.xml') => `
     <channel>
       <title>${escape(config.title)}</title>
       <link>${config.siteUrl}/News</link>
-      <description>${escape(config.description)}</description>
       <language>${config.language}</language>
       <managingEditor>${config.email} (${config.author})</managingEditor>
       <webMaster>${config.email} (${config.author})</webMaster>
